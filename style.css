@@ -68,13 +68,26 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
 .dark-alt { background: #111; }
 .section h2 { font-size: 40px; color: var(--primary-color); margin-bottom: 30px; }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     h1 {
-        font-size: 3rem; /* بصغّر اسمك عشان يوسع بالشاشة */
-        line-height: 1.1;
+        font-size: 40px !important; /* تصغير اسمك ليناسب عرض الشاشة */
+        line-height: 1.2;
     }
-    
-    .hero-content h1 {
-        font-size: 35px; /* جرب هاد القياس كمان */
+
+    .hero-content {
+        padding: 0 15px; /* إضافة مسافة جانبية عشان الكلام ما يلمس الأطراف */
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column; /* جعل الأزرار فوق بعض بدل جنب بعض */
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; /* الأزرار بتصير بعرض الشاشة ومرتبة */
+        max-width: 250px;
+        text-align: center;
     }
 }
