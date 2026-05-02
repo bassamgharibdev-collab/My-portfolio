@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bassam Gharib | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <header>
+        <div class="logo">
+            <a href="#home">BG<span>.</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <li id="theme-toggle" style="cursor: pointer;"><i class="fas fa-moon"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم الهوم مع صورة الخلفية -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div> <!-- لزيادة وضوح النص -->
+        <div class="hero-content">
+            <h1>BASSAM <span class="blue-text">GHARIB</span><br>DEV</h1>
+            <p id="typing-text" class="typing-style"></p>
+            <p class="hero-subtext">I build modern and responsive websites with clean code and great user experience.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-main">VIEW MY WORK</a>
+                <a href="#contact" class="btn-sub">CONTACT ME →</a>
+            </div>
+            <div class="social-hero">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- باقي الأقسام عشان الأزرار تشتغل -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>أنا بسام غريب، متخصص في تطوير الواجهات الأمامية.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section dark-alt">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <!-- هنا ستضيف مشاريعك لاحقاً -->
+                <div class="card">قريباً...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>تواصل معي عبر البريد الإلكتروني.</p>
+            <p><a href="mailto:bassam.gharib.dev">Bassam Gharib Developer</a></p>
+            <p>+963 79 151 137</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
