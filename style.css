@@ -68,28 +68,41 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
 .dark-alt { background: #111; }
 .section h2 { font-size: 40px; color: var(--primary-color); margin-bottom: 30px; }
 
-      @media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .hero-content {
         text-align: left !important;
         align-items: flex-start !important;
-        padding-left: 15px !important;
+        padding: 0 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
     }
 
     h1 {
-        font-size: 22px !important;
+        font-size: 26px !important;
         text-align: left !important;
-        display: block !important;
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero-content h2, .hero-content p {
+        font-size: 16px !important;
+        text-align: left !important;
+        margin-bottom: 20px !important;
     }
 
     .hero-buttons {
         display: flex !important;
-        flex-direction: column !important; 
+        flex-direction: column !important;
         align-items: flex-start !important;
-        gap: 10px !important;
+        gap: 15px !important;
+        width: 100% !important;
     }
 
     .btn {
         width: auto !important;
-        min-width: 150px;
+        min-width: 160px !important;
+        text-align: center !important;
+        padding: 10px 20px !important;
     }
 }
