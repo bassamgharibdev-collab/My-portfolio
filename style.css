@@ -31,7 +31,7 @@ nav ul { display: flex; list-style: none; gap: 30px; }
 nav ul li a { text-decoration: none; color: white; font-weight: 500; font-size: 14px; transition: 0.3s; }
 nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); }
 
-/* الهيروو سيكشن مع الصورة */
+
 .hero {
     height: 100vh;
     background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070') no-repeat center center/cover;
@@ -63,13 +63,13 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
 .social-hero a { color: white; opacity: 0.6; transition: 0.3s; }
 .social-hero a:hover { opacity: 1; color: var(--primary-color); }
 
-/* الأقسام الأخرى */
+
 .section { padding: 100px 10%; min-height: 80vh; text-align: center; }
 .dark-alt { background: #111; }
 .section h2 { font-size: 40px; color: var(--primary-color); margin-bottom: 30px; }
 
 @media (max-width: 480px) {
-    /* تصحيح العنوان الرئيسي */
+ 
     h1 {
         font-size: 28px !important; 
         display: block !important;
@@ -78,7 +78,7 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
         margin-bottom: 10px;
     }
 
-    /* تصحيح النص اللي تحت الاسم (Frontend Developer) */
+   
     .hero-content h2, .hero-content p, .hero-content span {
         font-size: 18px !important;
         display: block !important;
@@ -86,7 +86,7 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
         width: 100% !important;
     }
 
-    /* ترتيب الأزرار فوق بعض عشان ما يختفوا */
+    
     .hero-buttons {
         display: flex !important;
         flex-direction: column !important;

@@ -1,4 +1,4 @@
-// الكتابة
+
 const textEl = document.getElementById("typing-text");
 const words = ["FRONTEND DEVELOPER", "WEB DESIGNER", "BASSAM'S PORTFOLIO"];
 let wordIdx = 0, charIdx = 0, isDel = false;
@@ -13,7 +13,7 @@ function type() {
     setTimeout(type, speed);
 }
 
-// تلوين الأزرار عند السكرول
+
 window.onscroll = () => {
     let current = "";
     document.querySelectorAll("section").forEach(s => {
@@ -27,5 +27,5 @@ window.onscroll = () => {
 
 document.addEventListener("DOMContentLoaded", type);
 
-// تبديل الوضع
+
 document.getElementById('theme-toggle').onclick = () => document.body.classList.toggle('light-theme');
