@@ -68,32 +68,36 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
 .dark-alt { background: #111; }
 .section h2 { font-size: 40px; color: var(--primary-color); margin-bottom: 30px; }
 
-/* تنسيق خاص للهواتف فقط */
 @media (max-width: 480px) {
-    html, body {
-        overflow-x: hidden; /* يمنع الصفحة من التحرك يميناً ويساراً */
-    }
-
+    /* تصحيح العنوان الرئيسي */
     h1 {
-        font-size: 32px !important; /* تصغير اسمك أكثر ليناسب الشاشة */
-        white-space: normal; /* السماح للاسم بالنزول لسطر جديد إذا لزم الأمر */
-    }
-
-    .hero-content {
-        width: 100%;
-        padding: 0 10px;
+        font-size: 28px !important; 
+        display: block !important;
+        width: 100% !important;
         text-align: center;
+        margin-bottom: 10px;
     }
 
+    /* تصحيح النص اللي تحت الاسم (Frontend Developer) */
+    .hero-content h2, .hero-content p, .hero-content span {
+        font-size: 18px !important;
+        display: block !important;
+        text-align: center;
+        width: 100% !important;
+    }
+
+    /* ترتيب الأزرار فوق بعض عشان ما يختفوا */
     .hero-buttons {
-        display: flex;
-        flex-direction: column; /* وضع الأزرار فوق بعضها */
-        gap: 10px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+        margin-top: 20px;
     }
 
     .btn {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
+        width: 80% !important;
+        padding: 12px !important;
+        font-size: 16px !important;
     }
 }
