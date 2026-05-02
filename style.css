@@ -68,8 +68,8 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
 .dark-alt { background: #111; }
 .section h2 { font-size: 40px; color: var(--primary-color); margin-bottom: 30px; }
 
+       
 @media (max-width: 480px) {
- 
     h1 {
         font-size: 28px !important; 
         display: block !important;
@@ -78,7 +78,6 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
         margin-bottom: 10px;
     }
 
-   
     .hero-content h2, .hero-content p, .hero-content span {
         font-size: 18px !important;
         display: block !important;
@@ -86,7 +85,6 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
         width: 100% !important;
     }
 
-    
     .hero-buttons {
         display: flex !important;
         flex-direction: column !important;
@@ -99,5 +97,41 @@ nav ul li a.active { color: var(--primary-color); border-bottom: 2px solid var(-
         width: 80% !important;
         padding: 12px !important;
         font-size: 16px !important;
+    }
+}
+    
+  @media (max-width: 480px) {
+    
+    .hero-content {
+        text-align: left !important;
+        padding-left: 20px !important;
+        align-items: flex-start !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+        line-height: 1.2;
+    }
+
+    
+    .hero-content h2, .hero-content p {
+        font-size: 16px !important;
+        text-align: left !important;
+        width: 90% !important;
+    }
+
+    .hero-buttons {
+        justify-content: flex-start !important;
+        gap: 10px !important;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 10px 15px !important;
+        font-size: 14px !important;
     }
 }
